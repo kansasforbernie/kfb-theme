@@ -43,7 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Galleries
 --------------------------------------------------------------*/
 .row {
-  max-width: 70em;
+  max-width: 1120px;
   margin-left: auto;
   margin-right: auto; }
   .row:after {
@@ -459,7 +459,7 @@ a {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-@media screen and (max-width: 800px) {
+@media (max-width: 50em) {
   #site-navigation {
     position: fixed;
     background: #147FD7;
@@ -524,7 +524,7 @@ a {
         background: #FFFFFF;
         margin: 0 auto 1.5em; } }
 
-@media screen and (min-width: 801px) {
+@media (min-width: 50.0625em) {
   #site-navigation {
     position: fixed;
     margin: 0;
@@ -697,7 +697,7 @@ a {
   background: #FFFFFF; }
   #masthead .site-branding {
     padding-top: 1.5em; }
-    @media screen and (min-width: 801px) {
+    @media (min-width: 30em) {
       #masthead .site-branding {
         padding-top: 5em; } }
   #masthead .site-title {
@@ -712,11 +712,24 @@ a {
     max-width: 10em;
     width: 90%; }
 
+#main {
+  padding-left: 0.5em;
+  padding-right: 0.5em; }
+  @media (min-width: 30em) {
+    #main {
+      padding-left: 1em;
+      padding-right: 1em; } }
+  @media (min-width: 70em) {
+    #main {
+      padding-left: 0;
+      padding-right: 0; } }
+
 #colophon .billionaires {
   margin-left: auto;
   margin-right: auto;
   width: 15em;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 4em; }
 
 #colophon svg {
   max-width: 100%; }
@@ -733,6 +746,54 @@ a {
   text-align: center; }
   #colophon .paid-for .fa-heart {
     color: #EA504E; }
+
+.sidebar-toggle {
+  display: none; }
+
+@media (max-width: 50em) {
+  #secondary {
+    position: fixed;
+    background: #EA504E;
+    width: 5px;
+    width: 90%;
+    left: 0;
+    height: 100vh;
+    top: 0;
+    margin: 0;
+    -webkit-transition: -webkit-transform 250ms linear;
+            transition: transform 250ms linear;
+    border-right: 0px solid #147FD7;
+    -webkit-transform: translateX(-99%);
+        -ms-transform: translateX(-99%);
+            transform: translateX(-99%); }
+    #secondary.open {
+      width: 90%;
+      border-left-width: 5px;
+      -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+              transform: translateX(0); }
+      #secondary.open .sidebar-toggle {
+        right: auto;
+        background: #147FD7; }
+    #secondary .sidebar-toggle {
+      display: block;
+      box-shadow: none;
+      font-size: 1em;
+      border: none;
+      border-radius: 0;
+      background: #EA504E;
+      font-family: 'FontAwesome';
+      position: fixed;
+      bottom: 1em;
+      right: 0;
+      padding: .5em;
+      z-index: 2;
+      color: #FFFFFF;
+      right: -5em;
+      cursor: pointer; }
+      #secondary .sidebar-toggle .fa {
+        margin-left: .5em;
+        margin-top: 0; } }
 
 /*--------------------------------------------------------------
 # Infinite scroll

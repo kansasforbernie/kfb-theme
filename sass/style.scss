@@ -45,13 +45,37 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 // semantic grid system http://susy.oddbird.net/
 @import "../bower_components/susy/sass/susy";
+@import "../bower_components/sass-mq/mq";
+
+@import "variables-site/variables-site";
+
+$black  : #364350;
+$white  : #FFFFFF;
+$blue   : #147FD7;
+$red    : #EA504E;
+$green  : #4ACC66;
+$gray : #A7B6C5;
+
+$large  : 1120px;
+$medium : 800px;
+$small  : 480px;
+
+
+// $mq-breakpoints: (
+//     small   : $small,
+//     medium  : $medium,
+//     large   : $large,
+//     // wide:    1300px
+// );
+
+@import "mixins/mixins-master";
 
 $susy: (
   flow: ltr,
   math: fluid,
   output: float,
   gutter-position: after,
-  container: 70em,
+  container: $large,
   container-position: center,
   columns: 12,
   gutters: .25,
@@ -59,9 +83,6 @@ $susy: (
   global-box-sizing: border-box,
   last-flow: to,
 );
-
-@import "variables-site/variables-site";
-@import "mixins/mixins-master";
 
 @import "grid";
 

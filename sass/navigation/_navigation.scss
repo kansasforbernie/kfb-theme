@@ -8,7 +8,7 @@
 --------------------------------------------------------------*/
 // @import "menus";
 
-@media screen and (max-width: 800px){
+@include mq( $until : $medium ) {
 
 	#site-navigation {
 		position: fixed;
@@ -22,20 +22,6 @@
 		transition: transform 250ms linear;
 		border-left: 0px solid $red;
 		transform: translateX(99%);
-
-		&:before {
-			// content: '\f0c9 \2003 Menu';
-			// background: $blue;
-			// font-family: 'FontAwesome';
-			// position: fixed;
-			// bottom: 1em;
-			// right: 0;
-			// padding: .5em;
-			// z-index: 2;
-			// color: $white;
-			// left: -5.5em;
-			// cursor: pointer;
-		}
 
 		&.open {
 			width: 90%;
@@ -51,10 +37,6 @@
 				background: $red;
 			}
 
-			&:before {
-				// content: '\f00d \2003 Close Menu';
-				// left: auto;
-			}
 		}
 
 		.menu-toggle {
@@ -111,9 +93,8 @@
 
 } // END MOBILE NAV
 
-@media screen and ( min-width: 801px ){
-	
-	
+
+@include mq( $from : $medium + 1px ) {
 
 	#site-navigation {
 		position: fixed;
