@@ -1,0 +1,179 @@
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+@import "links";
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+// @import "menus";
+
+@media screen and (max-width: 800px){
+
+	#site-navigation {
+		position: fixed;
+		background: $blue;
+		width: 5px;
+		width: 90%;
+		right: 0;
+		height: 100vh;
+		top: 0;
+		margin: 0;
+		transition: transform 250ms linear;
+		border-left: 0px solid $red;
+		transform: translateX(99%);
+
+		&:before {
+			// content: '\f0c9 \2003 Menu';
+			// background: $blue;
+			// font-family: 'FontAwesome';
+			// position: fixed;
+			// bottom: 1em;
+			// right: 0;
+			// padding: .5em;
+			// z-index: 2;
+			// color: $white;
+			// left: -5.5em;
+			// cursor: pointer;
+		}
+
+		&.open {
+			width: 90%;
+			border-left-width: 5px;
+			transform: translateX(0);
+
+			#primary-menu {
+				padding-left: 0;
+			}
+
+			.menu-toggle {
+				left: auto;
+				background: $red;
+			}
+
+			&:before {
+				// content: '\f00d \2003 Close Menu';
+				// left: auto;
+			}
+		}
+
+		.menu-toggle {
+			content: '\f0c9 \2003 Menu';
+			box-shadow: none;
+			font-size: 1em;
+			border: none;
+			border-radius: 0;
+			background: $blue;
+			font-family: 'FontAwesome';
+			position: fixed;
+			bottom: 1em;
+			right: 0;
+			padding: .5em;
+			z-index: 2;
+			color: $white;
+			left: -5em;
+			cursor: pointer;
+
+			.fa {
+				margin-right: .5em;
+			}
+		}
+
+
+		#primary-menu {
+			margin: 1.5em 0;
+			padding-left: 5em;
+			list-style: none;
+			transition: padding 250ms linear;
+		}
+
+		li {
+			text-align: center;
+
+			a {
+				text-decoration: none;
+				color: $white;
+				text-transform: uppercase;
+			}
+
+			& + li {
+				&:before {
+					content: '';
+					display: block;
+					width: 3em;
+					height: 1px;
+					background: $white;
+					margin: 0 auto 1.5em;
+				}
+			}
+		}
+	}
+
+} // END MOBILE NAV
+
+@media screen and ( min-width: 801px ){
+	
+	
+
+	#site-navigation {
+		position: fixed;
+		margin: 0;
+		top: 0;
+		right: 0;
+		left: 0;
+		background: $black;
+		color: $white;
+		height: 3.5em;
+		transition: transform 250ms linear;
+		overflow: hidden;
+
+		.menu-toggle {
+			display: none;
+		}
+
+		.row {
+			margin-top: 0;
+		}
+
+		&.slideUp {
+			transform: translateY(-100%);
+		}
+
+		#primary-menu {
+			margin: 0;
+			padding: 0;
+			padding: .5em;
+
+			li {
+				display: inline-block;
+				text-transform: uppercase;
+				//position: relative;
+				
+				//font-family: 'Domine', 'Droid Serif', Georgia, serif;
+				
+
+				a {
+					text-decoration: none;
+					border-radius: .25em;
+					padding: .5em 1em;
+					display: block;
+					color: $white;
+
+					&:hover {
+						background: transparentize( $white, .8 );
+					}
+
+				}
+			}
+
+			li + li {
+				margin-left: 1em;
+				margin-top: 0;
+			}
+		}
+
+		.admin-bar & {
+			top: 32px;
+		}
+	}
+}

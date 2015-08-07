@@ -1,0 +1,19 @@
+a {
+	color: $red;
+
+	&:visited {
+		color: $red;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: darken( $red, 20% );
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

@@ -1,0 +1,79 @@
+// @import "../layout/content-sidebar";
+// @import "../layout/sidebar-content";
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Asides
+--------------------------------------------------------------*/
+@import "primary/asides";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "primary/comments";
+
+
+#masthead {
+	background: $white;
+
+	.site-branding {
+		padding-top: 1.5em;
+
+		@media screen and ( min-width: 801px){
+			padding-top: 5em;	
+		}
+		
+	}
+
+	.site-title {
+		text-align: center;
+
+		a {
+			display: inline-block;
+		}
+	}
+
+	.site-description {
+		text-align: center;
+		font-family: 'Domine', 'Droid Serif', Georgia, serif;
+		font-size: 1.25em;
+	}
+
+	#logo {
+		max-width: 10em;
+		width: 90%;
+	}
+}
+
+#colophon {
+	
+	.billionaires {
+		margin-left: auto;
+		margin-right: auto;
+		width: 15em;
+		text-align: center;
+	}
+
+	svg {
+		max-width: 100%;
+	}
+	#billionaires {
+		fill: $blue;
+	}
+
+	.paid-for {
+		border: 1px solid $black;
+		padding: .5em;
+		margin: inherit auto;
+		width: 90%;
+		max-width: 25em;
+		text-align: center;
+
+		.fa-heart {
+			color: $red;
+		}
+	}
+}
