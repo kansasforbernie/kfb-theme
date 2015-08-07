@@ -5,17 +5,11 @@ This theme is based on [_s](https://github.com/automattic/_s) maintained by Auto
 
 Getting Started
 ---------------
-For development, you will need some sort of local development environment. Personally, I recommend [VVV](https://github.com/Varying-Vagrant-Vagrants/VVV) but any LAMP/LEMP stack will suffice.
-
-After you have your environment provisioned, clone this repo into your `/wp-content/themes/` directory.
-
-If you're on OSX, you can use [CodeKit](https://incident57.com/codekit/) as a build tool for `SCSS` and `JS` minification/concatenation. If you aren't using CodeKit, be sure to **omit your build dependencies** in commits.
-
-SCSS should all compile to `style.css` in the themes root directory so functions like `get_stylesheet_uri()` still work as expected in WordPress.
-
 Be sure to pull often as this codebase will change drastically over the next few months.
 
 You'll also need to download the companion plugin for this theme and can view more details about the [kfb-plugin](https://github.com/kansasforbernie/kfb-plugin) by following that fancy link thing.
+
+For more info, be sure to check out the [Getting Started Guide Wiki Page](https://github.com/kansasforbernie/kfb-theme/wiki/Getting-Started).
 
 ### Collaboration ###
 
