@@ -15,10 +15,10 @@ SCSS should all compile to `style.css` in the themes root directory so functions
 
 Be sure to pull often as this codebase will change drastically over the next few months.
 
-You'll also need to download the companion plugin for this theme and can view more details about the [kfb-plugin](/kansasforbernie/kfb-plugin) by following that fancy link thing.
+You'll also need to download the companion plugin for this theme and can view more details about the [kfb-plugin](https://github.com/kansasforbernie/kfb-plugin) by following that fancy link thing.
 
 ### Collaboration ###
 
-Pull requests are welcome! If you aren't a developer/designer or familiar with code, [open an issue](issues) and we'll try to address them all to the best of our abilities.
+Pull requests are welcome! If you aren't a developer/designer or familiar with code, [open an issue](https://github.com/kansasforbernie/kfb-theme/issues) and we'll try to address them all to the best of our abilities.
 
 If you want to get more involved on a local level here on the ground, you can reach out to me on Twitter [@DaronSpence](https://twitter.com/daronspence) and we'll find a place for you!
